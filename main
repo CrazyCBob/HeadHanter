@@ -1,0 +1,16 @@
+
+
+public class main {
+    public static
+    void main(String args[]) {
+
+
+        head A = new head();
+        A.GetData();
+        A.PutData();
+
+
+    }
+
+}
+
