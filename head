@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class head {
+
+    String Name;
+    String Profession;
+    String email;
+    long Telephone;
+    long Salary;
+    int Age;
+
+
+    public head() {
+
+    }
+
+    //ввод данных о сотруднике
+    void GetData() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введите имя : ");
+        Name = sc.nextLine();
+
+        System.out.print("Введите профессию : ");
+        Profession = sc.nextLine();
+
+        System.out.print("Введите email : ");
+        email = sc.nextLine();
+
+        System.out.print("Введите телефон(моб) : ");
+        Telephone = Long.parseLong(sc.nextLine());
+
+        System.out.print("Введите зарплату : ");
+        Salary = Long.parseLong(sc.nextLine());
+
+        System.out.print("Введите возраст : ");
+        Age = Integer.parseInt(sc.nextLine());
+    }
+
+    //вывод информации об объекте в консоль
+    void PutData()
+
+    {
+        System.out.print("\nИмя : " + Name);
+        System.out.print("\nПрофессия : " + Profession);
+        System.out.print("\nemail : " + email);
+        System.out.print("\nТелефон : " + Telephone);
+        System.out.print("\nЗарплата : " + Salary);
+        System.out.print("\nВозраст : " + Age);
+    }
+}
